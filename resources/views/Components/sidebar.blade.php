@@ -56,26 +56,6 @@
 
         </ul>
 
-        <span class="menu-title">
-            Akun
-        </span>
-
-        <ul class="nav flex-column mt-2">
-
-            <li class="nav-item mb-1">
-
-                <a href="#" class="nav-link-minimal">
-
-                    <i class="bi bi-person-circle"></i>
-
-                    <span>Profile</span>
-
-                </a>
-
-            </li>
-
-        </ul>
-
     </div>
 
 </aside>

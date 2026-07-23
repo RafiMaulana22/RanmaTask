@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\TasksController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
@@ -38,4 +39,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/tasks', [TasksController::class, 'store'])->name('tasks.store');
     Route::put('/tasks/{task}', [TasksController::class, 'update'])->name('tasks.update');
     Route::delete('/tasks/{task}', [TasksController::class, 'destroy'])->name('tasks.destroy');
+
+    // Profile Route
+    Route::get('/profile', [ProfileController::class, 'index'])->name('profile.index');
+    Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::put('/profile/password', [ProfileController::class, 'updatePassword'])->name('profile.password');
 });

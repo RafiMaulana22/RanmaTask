@@ -57,7 +57,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="dropdown-item">
+                        <a href="{{ route('profile.index') }}" class="dropdown-item">
                             <i class="bi bi-person me-2.5"></i>
                             <span>Profile</span>
                         </a>
